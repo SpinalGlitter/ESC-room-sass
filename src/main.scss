@@ -41,6 +41,10 @@ header {
         padding-top: 10px;
     }
 
+    span {
+        display: block;
+    }
+
     .menu__container {
         width: 100%;
         height: auto;
@@ -118,13 +122,96 @@ header {
                 margin-right: 10px;
            }
         }
+    }
+}
 
-        
+.background__pic {
+    width: 100%;
+    height: 15rem;
+    background-image: url(background2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+ 
+    .buttons {
+        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: unset;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        top: 100%;
+        right: 50%;
+        bottom: -130%;
+        padding: 0 5%;
+        transform: translate(50%, -50%);
 
+        .btn {
+            font-weight: 700;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            padding: 1rem 3rem;
+        }
 
+        .btn__one {
+            background-color: transparent;
+            color: #36769d;
+            text-decoration: underline;
+            font-size: 15px;
+            margin: 1rem;
+        }
 
+        .btn__two {
+            background-color: #8acfe5;
+            color: #011827;
+            font-size: 18px;
+        }
     }
 
+    @media screen and (min-width: 500px) and (max-width: 899px) {
+        height: 25rem;
+
+        .buttons {
+            bottom: -80%;
+
+            .btn {
+                font-size: 16px;
+            }
+        }
+        }
+
+      
+
+    @media screen and (min-width: 900px) {
+        height: 30rem;
+
+        .buttons {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            top: 100%;
+            right: 50%;
+            transform: translate(50%, -50%);
+
+            .btn {
+                font-size: 23px;
+            }
+
+            .btn__one {
+                margin-right: 1rem;
+                background-color: #E3170A;
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+   
+    }
 }
 
 
