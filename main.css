@@ -6,7 +6,10 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h5 {
+h1,
+h2,
+h3,
+h5 {
   font-weight: 700;
 }
 
@@ -183,7 +186,7 @@ header .menu__container .menu ul a {
   }
   .background__pic .buttons .btn__one {
     margin-right: 1rem;
-    background-color: #E3170A;
+    background-color: #e3170a;
     color: white;
     text-decoration: none;
   }
@@ -239,6 +242,7 @@ header .menu__container .menu ul a {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    overflow-x: hidden;
   }
   .reviews .user__content .review {
     width: 45%;
@@ -269,14 +273,17 @@ header .menu__container .menu ul a {
   overflow-y: hidden;
 }
 .popular__challenges .boxes .box {
-  max-width: 1400px;
-  min-width: 65%;
-  width: 28%;
-  margin-right: 4rem;
   height: auto;
   border-radius: 6px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   background-color: white;
+}
+@media screen and (max-width: 900px) {
+  .popular__challenges .boxes .box {
+    max-width: 1300px;
+    min-width: 65%;
+    margin-right: 4rem;
+  }
 }
 .popular__challenges .boxes .box .box__pic {
   height: 12rem;
@@ -323,7 +330,7 @@ header .menu__container .menu ul a {
   margin-top: 1rem;
 }
 .popular__challenges .boxes .box .box__content .box__button .book__button {
-  background-color: #E3170A;
+  background-color: #e3170a;
   color: white;
   font-weight: 700;
   font-size: 15px;
@@ -347,11 +354,12 @@ header .menu__container .menu ul a {
   font-weight: 700;
   font-size: 1.2rem;
   margin-top: 2rem;
+  padding: 1rem 3rem;
   border: none;
   cursor: pointer;
 }
 .popular__challenges .mid__buttons .btn__Two {
-  background-color: #8ACFE5;
+  background-color: #8acfe5;
   color: #011827;
   font-size: 1.2rem;
   font-weight: 700;
@@ -374,6 +382,7 @@ header .menu__container .menu ul a {
   }
   .popular__challenges .box__challenges {
     max-width: 1300px;
+    margin: 0 auto;
   }
   .popular__challenges .box__challenges .main__title {
     font-size: 2rem;
@@ -381,6 +390,88 @@ header .menu__container .menu ul a {
   .popular__challenges .box__challenges .boxes {
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
+    overflow-x: hidden;
+  }
+  .popular__challenges .box__challenges .boxes .box {
+    width: 28%;
+    height: auto;
+  }
+  .popular__challenges .box__challenges .mid__buttons {
+    justify-content: center;
+    flex-direction: row;
+  }
+  .popular__challenges .box__challenges .mid__buttons .btn__One {
+    margin-right: 1rem;
+    margin-top: 0;
+    background-color: #E3170A;
+    color: white;
+    font-weight: 700;
+    font-size: 23px;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    border: none;
+    cursor: pointer;
+  }
+  .popular__challenges .box__challenges .mid__buttons .btn__Two {
+    background-color: #8ACFE5;
+    color: #011827;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.info {
+  background-color: #011827;
+  width: 100%;
+  height: auto;
+  padding: 0 5%;
+}
+.info .mid__info {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info .mid__info p {
+  height: auto;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 899px) {
+  .info .mid__info p {
+    font-size: 1.2rem;
+  }
+}
+.info .mid__info button {
+  margin-top: 2.5rem;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: #011827;
+  color: #8ACFE5;
+  border: 0.2rem solid #8ACFE5;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 899px) {
+  .info .mid__info button {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .info p {
+    max-width: 45%;
+    font-size: 1.5rem;
+  }
+  .info button {
+    font-size: 24px;
   }
 }
 
