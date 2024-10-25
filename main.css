@@ -475,4 +475,135 @@ header .menu__container .menu ul a {
   }
 }
 
+.block__content {
+  max-width: 1300px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.block__content .block__one, .block__content .block__four {
+  order: 1;
+  background-image: url(block11.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 25rem;
+}
+.block__content .block__two, .block__content .block__three {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+.block__content .block__two h2, .block__content .block__three h2 {
+  font-size: 2rem;
+}
+.block__content .block__two p, .block__content .block__three p {
+  font-size: 1.5rem;
+}
+.block__content .block__two button, .block__content .block__three button {
+  font-weight: 700;
+  font-size: 1.5rem;
+  border: none;
+  background-color: #E3170A;
+  color: white;
+  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+}
+.block__content .block__two {
+  order: 2;
+}
+.block__content .block__three {
+  order: 4;
+}
+.block__content .block__four {
+  order: 3;
+  background-image: url(kelly44.png);
+}
+@media screen and (min-width: 500px) {
+  .block__content {
+    padding: 0 5%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .block__content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .block__content .block__one, .block__content .block__two, .block__content .block__three, .block__content .block__four {
+    width: 50%;
+    height: 30rem;
+  }
+  .block__content .block__three {
+    order: 3;
+  }
+}
+
+.foot {
+  width: 100%;
+  height: auto;
+  background-color: #011827;
+  padding: 0 5%;
+  margin-top: 10rem;
+}
+.foot .foot__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.foot .foot__flex .footer__text {
+  width: inherit;
+  margin-bottom: 1.8rem;
+}
+.foot .foot__flex .footer__text h5 {
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.foot .foot__flex .footer__text p {
+  color: white;
+  font-size: 0.9rem;
+}
+.foot .foot__flex .links {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  width: 6rem;
+}
+.foot .foot__flex .links .site__map {
+  margin-bottom: 2rem;
+}
+.foot .foot__flex .links .site__map h5 {
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.foot .foot__flex .links .site__map a {
+  display: inline-block;
+  color: white;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+.foot .foot__flex .links .site__map .play__online {
+  margin-top: 1rem;
+}
+.foot .foot__flex .links .social__media h5 {
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.foot .foot__flex .links .social__media a {
+  display: inline-block;
+  color: white;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
 /*# sourceMappingURL=main.css.map */
