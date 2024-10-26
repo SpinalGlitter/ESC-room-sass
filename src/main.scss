@@ -311,6 +311,7 @@ header {
         min-width: 65%;
         margin-right: 4rem;
       }
+      
       .box__pic {
         height: 12rem;
         width: 100%;
@@ -377,6 +378,7 @@ header {
       }
     }
   }
+
   .mid__buttons {
     width: 100%;
     display: flex;
@@ -512,7 +514,6 @@ header {
     }
 
     @media screen and (min-width: 900px){
-        
         p {
             max-width: 45%;
             font-size: 1.5rem;
@@ -655,7 +656,6 @@ header {
         .play__online{
           margin-top: 1rem;
         }
-   
       }
 
       .social__media {
@@ -688,7 +688,6 @@ header {
       padding: 13rem;
       max-width: 1200px;
       
-
       .footer__text {
         width: 40%;
       }
