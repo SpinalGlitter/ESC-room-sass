@@ -617,6 +617,7 @@ header .menu__container .menu ul a {
     flex-direction: row;
     justify-content: space-between;
     padding: 13rem;
+    max-width: 1200px;
   }
   .foot .foot__flex .footer__text {
     width: 40%;
@@ -626,10 +627,15 @@ header .menu__container .menu ul a {
   }
   .foot .foot__flex .links {
     flex-direction: row;
+    width: 18rem;
   }
-  .foot .foot__flex .links .site__map {
-    margin-right: 3rem;
-    width: 6rem;
+  .foot .foot__flex .links .site__map ul {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+  }
+  .foot .foot__flex .links .social__media {
+    width: 10rem;
   }
 }
 

@@ -686,20 +686,29 @@ header {
       flex-direction: row;
       justify-content: space-between;
       padding: 13rem;
+      max-width: 1200px;
+      
 
       .footer__text {
         width: 40%;
       }
+
       .footer__text p, .links .site__map a, .links .social__media a {
         font-size: 1.1rem;
       }
 
       .links {
         flex-direction: row;
+        width: 18rem;
 
-        .site__map {
-          margin-right: 3rem;
-          width: 6rem;
+        .site__map ul {
+          display: flex;
+          flex-direction: column;
+          width: 10rem;
+        }
+
+        .social__media {
+          width: 10rem;
         }
       }
     }
