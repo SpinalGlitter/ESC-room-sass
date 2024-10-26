@@ -476,7 +476,6 @@ header .menu__container .menu ul a {
 }
 
 .block__content {
-  max-width: 1300px;
   width: 100%;
   height: auto;
   display: flex;
@@ -604,6 +603,34 @@ header .menu__container .menu ul a {
   color: white;
   margin-bottom: 0.2rem;
   font-size: 0.9rem;
+}
+@media screen and (min-width: 500px) {
+  .foot .foot__flex .footer__text h5, .foot .foot__flex .links .site__map h5, .foot .foot__flex .links .social__media h5 {
+    font-size: 1.1rem;
+  }
+  .foot .foot__flex .links {
+    width: 7rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .foot .foot__flex {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 13rem;
+  }
+  .foot .foot__flex .footer__text {
+    width: 40%;
+  }
+  .foot .foot__flex .footer__text p, .foot .foot__flex .links .site__map a, .foot .foot__flex .links .social__media a {
+    font-size: 1.1rem;
+  }
+  .foot .foot__flex .links {
+    flex-direction: row;
+  }
+  .foot .foot__flex .links .site__map {
+    margin-right: 3rem;
+    width: 6rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

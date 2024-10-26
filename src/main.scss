@@ -524,8 +524,7 @@ header {
     }
 }
 
-.block__content {
-  max-width: 1300px;
+.block__content { 
   width: 100%;
   height: auto;
   display: flex;
@@ -663,7 +662,7 @@ header {
         h5 {
           color: white;
           font-size: 0.9rem;
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.5rem;   
         }
 
         a {
@@ -674,5 +673,36 @@ header {
         }
       }
     }
+    @media screen and (min-width: 500px)  {
+      .footer__text h5, .links .site__map h5, .links .social__media h5 {
+        font-size: 1.1rem;
+      }
+      .links {
+        width: 7rem;
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 13rem;
+
+      .footer__text {
+        width: 40%;
+      }
+      .footer__text p, .links .site__map a, .links .social__media a {
+        font-size: 1.1rem;
+      }
+
+      .links {
+        flex-direction: row;
+
+        .site__map {
+          margin-right: 3rem;
+          width: 6rem;
+        }
+      }
+    }
   }
 }
+
