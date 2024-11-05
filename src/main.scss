@@ -26,21 +26,8 @@ header {
   padding: 10px;
 
   .logo__container {
+    width: 100%;
     align-items: center;
-
-    @media screen and (max-width: 899px) {
-      width: 100%;
-      .hamburger__pic {
-        display: block;
-        margin-top: 0.5rem;
-        margin-right: 0.5rem;
-        background-image: url(hamburger.png);
-        float: right;
-        width: 51px;
-        height: 32px;
-        cursor: pointer;
-      }
-    }
   }
 
   .logo {
@@ -61,11 +48,84 @@ header {
     display: block;
   }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    scale: 0.9;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+} 
+  
+  @media screen and (max-width: 899px) {
+    .logo__container .hamburger__pic {
+      display: block;
+      background-image: url(hamburger.png);
+      width: 51px;
+      height: 32px;
+      float: right;
+      margin-top: 0.5rem;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+    }
+
+    .menu__container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: 99;
+      padding: 3%;
+
+      .menu {
+        animation: fadeIn 0.7s;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #011827;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        li {
+          list-style-type: none;
+        }
+
+        li a {
+          display: inline-block;
+          font-size: 1.8rem;
+          padding: 2rem 1rem;
+          text-decoration: none;
+          color: white;
+        }
+
+        .close {
+          background-image: url(close.png);
+          background-size: cover;
+          width: 2.3rem;
+          height: 2.3rem;
+          display: block;
+          position: absolute;
+          top: 1.5rem;
+          right: 1.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 900px) {
   .menu__container {
     width: 100%;
     height: auto;
     padding: 1rem 5% 0.8rem 5%;
-
+  }
     @media screen and (max-width: 499px) {
       display: none;
     }
