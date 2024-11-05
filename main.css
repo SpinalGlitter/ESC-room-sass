@@ -93,6 +93,7 @@ header span {
   header .menu__container .menu li a {
     display: inline-block;
     font-size: 1.8rem;
+    font-weight: 700;
     padding: 2rem 1rem;
     text-decoration: none;
     color: white;
