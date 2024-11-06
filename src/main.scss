@@ -48,17 +48,17 @@ header {
     display: block;
   }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    scale: 0.9;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      scale: 0.9;
+    }
+    100% {
+      opacity: 1;
+      scale: 1;
+    }
   }
-  100% {
-    opacity: 1;
-    scale: 1;
-  }
-} 
-  
+
   @media screen and (max-width: 899px) {
     .logo__container .hamburger__pic {
       display: block;
@@ -104,7 +104,6 @@ header {
           padding: 2rem 1rem;
           text-decoration: none;
           color: white;
-
         }
 
         .close {
@@ -123,18 +122,17 @@ header {
   }
 
   @media screen and (max-width: 499px) {
-    .menu__container{
-    display: none;
+    .menu__container {
+      display: none;
     }
   }
 
   @media screen and (min-width: 900px) {
-  .menu__container {
-    width: 100%;
-    height: auto;
-    padding: 1rem 5% 0.8rem 5%;
-  }
-   
+    .menu__container {
+      width: 100%;
+      height: auto;
+      padding: 1rem 5% 0.8rem 5%;
+    }
 
     .menu {
       display: flex;
@@ -149,11 +147,10 @@ header {
       }
 
       a:hover {
-        color: #8ACFE5;
+        color: #8acfe5;
       }
     }
   }
-
 
   @media screen and (min-width: 500px) and (max-width: 899px) {
     .logo__container {
@@ -392,7 +389,7 @@ header {
         min-width: 65%;
         margin-right: 4rem;
       }
-      
+
       .box__pic {
         height: 12rem;
         width: 100%;
@@ -524,29 +521,29 @@ header {
       .mid__buttons {
         justify-content: center;
         flex-direction: row;
-        
+
         .btn__One {
-            margin-right: 1rem;
-            margin-top: 0;
-            background-color: #E3170A;
-            color: white;
-            font-weight: 700;
-            font-size: 23px;
-            border-radius: 5px;
-            padding: 1rem 3rem;
-            border: none;
-            cursor: pointer;
+          margin-right: 1rem;
+          margin-top: 0;
+          background-color: #e3170a;
+          color: white;
+          font-weight: 700;
+          font-size: 23px;
+          border-radius: 5px;
+          padding: 1rem 3rem;
+          border: none;
+          cursor: pointer;
         }
-        
+
         .btn__Two {
-            background-color: #8ACFE5;
-            color: #011827;
-            font-size: 23px;
-            font-weight: 700;
-            border-radius: 5px;
-            padding: 1rem 3rem;
-            border: none;
-            cursor: pointer;
+          background-color: #8acfe5;
+          color: #011827;
+          font-size: 23px;
+          font-weight: 700;
+          border-radius: 5px;
+          padding: 1rem 3rem;
+          border: none;
+          cursor: pointer;
         }
       }
     }
@@ -554,65 +551,66 @@ header {
 }
 
 .info {
-    background-color: #011827;
-    width: 100%;
-    height: auto;
-    padding: 0 5%;
+  background-color: #011827;
+  width: 100%;
+  height: auto;
+  padding: 0 5%;
 
-    .mid__info {
-        max-width: 1300px;
-        margin: 0 auto;
-        height: 30rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+  .mid__info {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-        p {
-            height: auto;
-            text-align: center;
-            color: white;
-            
-            @media screen and (max-width: 899px){
-                font-size: 1.2rem;
-            }
-        }
+    p {
+      height: auto;
+      text-align: center;
+      color: white;
 
-        button {
-            margin-top: 2.5rem;
-            font-weight: 700;
-            border-radius: 5px;
-            background-color: #011827;
-            color: #8ACFE5;
-            border: 0.2rem solid #8ACFE5;
-            padding: 1rem 3rem;
-            cursor: pointer;
-
-            @media screen and (max-width: 899px) {
-                font-size: 20px;
-            }
-        }
+      @media screen and (max-width: 899px) {
+        font-size: 1.2rem;
+      }
     }
 
-    @media screen and (min-width: 900px){
-        p {
-            max-width: 45%;
-            font-size: 1.5rem;
-        }
-        
-        button {
-            font-size: 24px;
-        }
+    button {
+      margin-top: 2.5rem;
+      font-weight: 700;
+      border-radius: 5px;
+      background-color: #011827;
+      color: #8acfe5;
+      border: 0.2rem solid #8acfe5;
+      padding: 1rem 3rem;
+      cursor: pointer;
+
+      @media screen and (max-width: 899px) {
+        font-size: 20px;
+      }
     }
+  }
+
+  @media screen and (min-width: 900px) {
+    p {
+      max-width: 45%;
+      font-size: 1.5rem;
+    }
+
+    button {
+      font-size: 24px;
+    }
+  }
 }
 
-.block__content { 
+.block__content {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
 
-  .block__one, .block__four {
+  .block__one,
+  .block__four {
     order: 1;
     background-image: url(block11.png);
     background-size: cover;
@@ -621,7 +619,8 @@ header {
     height: 25rem;
   }
 
-  .block__two, .block__three {
+  .block__two,
+  .block__three {
     width: 100%;
     height: 25rem;
     display: flex;
@@ -641,24 +640,24 @@ header {
       font-weight: 700;
       font-size: 1.5rem;
       border: none;
-      background-color: #E3170A;
+      background-color: #e3170a;
       color: white;
       border-radius: 5px;
       padding: 0.8rem 1.5rem;
       cursor: pointer;
     }
   }
-  
+
   .block__two {
     order: 2;
   }
-  
+
   .block__three {
     order: 4;
   }
 
-  .block__four{
-    order:3;
+  .block__four {
+    order: 3;
     background-image: url(kelly44.png);
   }
 
@@ -671,7 +670,10 @@ header {
     flex-wrap: wrap;
     padding: 0;
 
-    .block__one, .block__two, .block__three, .block__four {
+    .block__one,
+    .block__two,
+    .block__three,
+    .block__four {
       width: 50%;
       height: 30rem;
     }
@@ -720,7 +722,7 @@ header {
 
       .site__map {
         margin-bottom: 2rem;
-        
+
         h5 {
           color: white;
           font-size: 0.9rem;
@@ -734,7 +736,7 @@ header {
           font-size: 0.9rem;
         }
 
-        .play__online{
+        .play__online {
           margin-top: 1rem;
         }
       }
@@ -743,7 +745,7 @@ header {
         h5 {
           color: white;
           font-size: 0.9rem;
-          margin-bottom: 0.5rem;   
+          margin-bottom: 0.5rem;
         }
 
         a {
@@ -754,8 +756,10 @@ header {
         }
       }
     }
-    @media screen and (min-width: 500px)  {
-      .footer__text h5, .links .site__map h5, .links .social__media h5 {
+    @media screen and (min-width: 500px) {
+      .footer__text h5,
+      .links .site__map h5,
+      .links .social__media h5 {
         font-size: 1.1rem;
       }
       .links {
@@ -768,12 +772,14 @@ header {
       justify-content: space-between;
       padding: 13rem;
       max-width: 1200px;
-      
+
       .footer__text {
         width: 40%;
       }
 
-      .footer__text p, .links .site__map a, .links .social__media a {
+      .footer__text p,
+      .links .site__map a,
+      .links .social__media a {
         font-size: 1.1rem;
       }
 
@@ -794,4 +800,3 @@ header {
     }
   }
 }
-
