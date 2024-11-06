@@ -122,15 +122,19 @@ header {
     }
   }
 
+  @media screen and (max-width: 499px) {
+    .menu__container{
+    display: none;
+    }
+  }
+
   @media screen and (min-width: 900px) {
   .menu__container {
     width: 100%;
     height: auto;
     padding: 1rem 5% 0.8rem 5%;
   }
-    @media screen and (max-width: 499px) {
-      display: none;
-    }
+   
 
     .menu {
       display: flex;
