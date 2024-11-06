@@ -33,6 +33,7 @@ header .logo {
   transform: translateY(0.1rem);
   width: 6rem;
   height: 4rem;
+  margin-left: 0.3rem;
 }
 header h1 {
   display: inline-block;
@@ -344,8 +345,7 @@ header span {
 .popular__challenges .boxes .box {
   height: auto;
   border-radius: 6px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   background-color: white;
 }
 @media screen and (max-width: 900px) {
@@ -385,13 +385,7 @@ header span {
   height: 1rem;
   margin-right: 0.1rem;
 }
-.popular__challenges
-  .boxes
-  .box
-  .box__content
-  .five__stars
-  .stars
-  .empty__star {
+.popular__challenges .boxes .box .box__content .five__stars .stars .empty__star {
   background-image: url(Star51.png);
 }
 .popular__challenges .boxes .box .box__content .five__stars p {
