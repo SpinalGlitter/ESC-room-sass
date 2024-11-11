@@ -1,7 +1,6 @@
  const hamburger = document.querySelector('.hamburger__pic');
  const closeBtn = document.querySelector('.close');
  const menu = document.querySelector('.menu__container');
- const body = document.body;
 
  //show menu when clicking on hamburger icon
  hamburger.addEventListener('click', ()=> {
