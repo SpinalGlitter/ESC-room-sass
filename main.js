@@ -13,6 +13,5 @@
 closeBtn.addEventListener('click', ()=> {
     menu.style.display = 'none';
     hamburger.style.display = 'block';
-    
  }
 );
