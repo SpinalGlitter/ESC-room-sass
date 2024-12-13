@@ -2,7 +2,7 @@ const prettier = require('eslint-plugin-prettier');
 
 module.exports = [
   {
-    files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+    files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx', '**/*.html'],
     languageOptions: {
       ecmaVersion: 2021,
       sourceType: 'module',
