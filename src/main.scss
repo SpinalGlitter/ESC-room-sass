@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -15,6 +15,10 @@ h5 {
 
 body {
   background-color: white;
+
+  .no-scroll {
+    overflow: hidden;
+  }
 }
 
 header {
@@ -382,7 +386,8 @@ header {
     .box {
       height: auto;
       border-radius: 6px;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
         rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
       background-color: white;
       @media screen and (max-width: 900px) {

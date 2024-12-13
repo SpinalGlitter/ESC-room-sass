@@ -6,11 +6,31 @@
   "scripts": {
     "sass:compile": "sass src/main.scss main.css",
     "sass:watch": "sass --watch src/main.scss main.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.80.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.11",
+    "prettier": "^3.4.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }
