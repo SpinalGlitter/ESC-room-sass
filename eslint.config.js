@@ -11,7 +11,12 @@ module.exports = [
       prettier,
     },
     rules: {
-      'prettier/prettier': 'error',
+      'prettier/prettier': [
+        'error',
+        {
+          endOfLine: 'auto', // Detta fixar "Delete `cr`" felet
+        },
+      ],
       semi: ['warn', 'always'],
     },
   },
