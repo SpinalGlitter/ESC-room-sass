@@ -4,7 +4,7 @@ module.exports = [
   {
     files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
     languageOptions: {
-      ecmaVersion: 2021,
+      ecmaVersion: 2024,
       sourceType: 'module',
     },
     plugins: {
